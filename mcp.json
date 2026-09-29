@@ -1,0 +1,20 @@
+{
+  "notes": "Swap the sim server for real ones: your property management system, the event and sales calendar, and guest messaging.",
+  "servers": {
+    "sim": {
+      "command": "python3",
+      "args": [
+        "-m",
+        "opsharness.mcp_serve",
+        "--env",
+        "hotel",
+        "--seed",
+        "0"
+      ]
+    }
+  },
+  "approve": {
+    "always": [],
+    "never": []
+  }
+}
